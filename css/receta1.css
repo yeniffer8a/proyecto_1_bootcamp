@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+    "cabecera cabecera cabecera"
+    "main main aside1"
+    "main main aside2"
+    "footer footer footer";
+    background-color: #f3e5d8;
+    position: relative;
+}
+.cabecera{
+    grid-area: cabecera;
+    
+    
+}
+.principal{
+    grid-area: main;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.apartado1{
+    
+    grid-area: aside1;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: auto;
+    padding-bottom: 1.2rem;
+}
+.apartado2{
+    display: flex;
+    flex-direction: column;
+    grid-area: aside2;
+    background-color: #255538;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: 80vh;
+    position: absolute;
+    bottom: 10rem;
+}
+.pie{
+grid-area: footer;
+}
+
+.apartado2 .other-recipes img{
+    border-radius: 1rem;
+width: 30%;
+}
+.other-recipes{
+display: flex;
+gap: 1rem;
+padding: 1.5rem;
+}
+.apartado2 .other-recipes:nth-of-type(1){
+    padding-top: 2rem;
+}
+.other-recipes h4{
+    color: #000;
+}
+.time-preparation{
+    width: 80%;
+    background-color: #f3e5d8;
+    margin-left: 3.2rem;
+    border-radius: 1rem;
+    padding: 0 1rem 1rem;
+}
+.initial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #255538;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.inicial{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    color: white;
+
+}
+/*Titles*/
+h1, h3, h4{
+    color: #7E4333;
+    padding: 1rem;
+    font-family: "DM Serif Display";
+}
+#register-mark{
+    font-family: "MD Sans";
+    color: white;
+}
+.introduction h1{
+    font-size: 2rem;
+}
+h5{
+    padding: 1rem;
+}
+/**/
+.introduction, .time-preparation, .instructions{
+    margin-top: 2.2rem;
+}
+
+/*Paragraph, list, table*/
+p, li, td, h5{
+    font-family: "DM Sans";
+    font-size: 0.8rem;
+    
+}
+p{
+    padding: 0 0 1.2rem 0;
+}
+/*Main*/
+.section_img img{
+    width: 100%;
+    height: 100vh;
+    border-radius: 1rem;
+
+}
+.times{
+   /* display: flex;
+    gap: 15px;*/
+    list-style-type: none;
+}
+span{
+    font-weight: bold;
+}
+/*Section aside*/
+table{
+    width: 95%;
+    table-layout: fixed;
+    border-collapse: collapse;/*quitar línea entre celdas, solo sirve en la etiqueta tabla*/
+    margin: 0 auto;
+    
+}
+.nutritional-table table{
+    padding-bottom: 1rem;
+}
+table, td{/*se aplica a todos los selectores*/
+    /*border: 1px solid black;*/
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #000;
+}
+table tr td:nth-of-type(2){
+   /* background-color: azure;Los espacios entre selesctores, quiere decir que adentro de lo que este más a la derecha, cerca de los selectores*/
+    text-align: right;
+}
+
