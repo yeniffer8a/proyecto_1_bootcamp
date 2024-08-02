@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3e5d8;
+}
+/******Header*********/
+.cabecera{
+    grid-area: cabecera;
+    
+    
+}
+.initial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #255538;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.inicial{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    color: white;
+    
+
+}
+.inicial a{
+     color: white;
+     text-decoration: none;
+     
+}
+
+.image-header{
+    
+    border-radius: 0.5rem;
+    width: 99%;
+    height: 50vh;
+}
+h1{
+    position: absolute;
+    width: 50%;
+    bottom: 4rem;
+    color: white;
+    padding-left: 0.5rem;
+    font-family: "MD Sans";
+    font-size: 2.3rem;
+}
+.div-image-header{
+position: relative;
+padding:0 2rem 0 2rem;
+margin-bottom: 1rem;
+
+}
+/**************Main************/
+.subtitle{
+    width: 90%;
+  padding-left: 2rem;
+    font-family: "DM Serif Display";
+    color: #7E4333;
+}
+.recipes-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;/*Uso auto por ser tarjetas del mismo tamaño*/
+    margin-top: 1rem ;
+    margin-bottom: 0.5rem;
+    padding:0 2rem 0 2rem;
+
+}
+.card-recipe{
+    background-color: white;
+    width: 95%;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.card-recipe img{
+    width: 90%;
+    height: 55%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    
+}
+.card-recipe h3{
+    font-family: "DM Serif Display";
+    color: #7E4333;
+}
+.card-recipe ul li{
+    font-family: "MD Sans";
+}
+span{
+    font-weight: bold;
+}
+/*********Footer*********/
+.pie{
+    grid-area: footer;
+    }
+ .register-mark{
+        font-family: "MD Sans";
+        color: white;
+    }
+
+    /******media query*******/
+
+    @media screen and (max-width: 769px) {
+        /******Main********/
+        .recipes-section{
+        
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:auto;/*Uso auto por ser tarjetas del mismo tamaño*/ 
+        }
+        h1{
+            font-size: 1.7rem;
+        }
+        .recipes-section{
+            padding:0 0 0 1rem;
+        }
+        .div-image-header{
+            padding:0 0.5rem 0 0.9rem;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        /******Main********/
+        .recipes-section{
+        
+            grid-template-columns: 1fr;
+            grid-template-rows:auto;/*Uso auto por ser tarjetas del mismo tamaño*/
+        }
+        h1{
+            font-size: 1.3rem;
+        }
+
+        .div-image-header{
+           padding: 0 1.1rem 0 1.1rem;
+        }
+    }
