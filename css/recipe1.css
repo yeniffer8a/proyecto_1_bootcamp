@@ -27,6 +27,10 @@ body {
   padding: 1rem;
   margin: 1rem;
 }
+.change-theme {
+  background-color: #255538;
+  cursor: pointer;
+}
 .apartado1 {
   grid-area: aside1;
   background-color: white;
@@ -186,7 +190,65 @@ table tr td:nth-of-type(2) {
   cursor: pointer;
   color: #000;
 }
-
+/******Dark Mode*********/
+.dark-mode {
+  background-color: #000;
+}
+.dark-mode .principal {
+  background-color: rgb(53, 52, 52);
+}
+.dark-mode .introduction h1 {
+  color: white;
+}
+.dark-mode .introduction p {
+  color: white;
+}
+.dark-mode .time-preparation {
+  background-color: #514f4f;
+}
+.dark-mode .time-preparation h4 {
+  color: white;
+}
+.dark-mode .time-preparation .times li {
+  color: white;
+}
+.dark-mode .instructions h4 {
+  color: white;
+}
+.dark-mode .instructions ol li {
+  color: white;
+}
+.dark-mode .apartado1 {
+  background-color: rgb(53, 52, 52);
+}
+.dark-mode .apartado2 {
+  background-color: rgb(53, 52, 52);
+}
+.dark-mode .apartado1 h4 {
+  color: white;
+}
+.dark-mode .apartado1 div ul li {
+  color: white;
+}
+.dark-mode .apartado1 div h4 {
+  color: white;
+}
+.dark-mode .apartado1 div table tr td {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.dark-mode .apartado2 a div div h4 {
+  color: white;
+}
+.dark-mode .apartado2 a div div p {
+  color: white;
+}
+.dark-mode .principal .instructions p {
+  color: white;
+}
+.dark-mode .apartado1 div h5 {
+  color: white;
+}
 /*****media query******/
 @media screen and (max-width: 769px) {
   body {

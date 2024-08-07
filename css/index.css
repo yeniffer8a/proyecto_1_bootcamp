@@ -15,6 +15,10 @@ body {
   top: 0;
   z-index: 9999;
 }
+.change-theme {
+  background-color: #255538;
+  cursor: pointer;
+}
 .initial {
   display: flex;
   flex-direction: row;
@@ -113,7 +117,23 @@ span {
   font-family: "DM Sans";
   color: white;
 }
+/*****Dark Mode**********/
 
+.dark-mode .subtitle {
+  color: white;
+}
+.dark-mode {
+  background-color: black;
+}
+.dark-mode .card-recipe {
+  background-color: rgb(53, 52, 52);
+}
+.dark-mode .card-recipe h3 {
+  color: white;
+}
+.dark-mode .card-recipe ul li {
+  color: white;
+}
 /******media query*******/
 
 @media screen and (max-width: 769px) {
