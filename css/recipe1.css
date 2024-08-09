@@ -100,6 +100,11 @@ body {
   list-style-type: none;
   color: white;
 }
+.inicial a {
+  color: white;
+  text-decoration: none;
+  font-family: "DM Sans";
+}
 /*Titles*/
 h1,
 h3,
@@ -265,5 +270,8 @@ table tr td:nth-of-type(2) {
 @media screen and (max-width: 480px) {
   .introduction h1 {
     font-size: 1.6rem;
+  }
+  #register-mark {
+    font-size: 0.8rem;
   }
 }
