@@ -41,7 +41,7 @@ p {
   cursor: pointer;
 }
 form {
-  margin: 0 auto;
+  margin: 30px auto;
   background-color: white;
   padding: 3rem 1rem;
   max-width: 45%;
@@ -63,6 +63,7 @@ textarea {
   background-color: #eee;
   border: 0;
   border-radius: 0.2rem;
+  padding: 8px;
 }
 button[type="submit"] {
   margin: 0 auto;
@@ -78,6 +79,24 @@ button[type="submit"] {
 .register-mark {
   font-family: "DM Sans";
   color: white;
+}
+/****home page come back****/
+.home-page-back {
+  /* grid-area: homePageBack;*/
+  position: fixed;
+  right: 10px;
+  bottom: 6rem;
+  width: 3.5rem;
+  border: 0;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-family: "DM Sans";
+  background-color: #255538;
+  opacity: 0.5;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
 }
 /******Dark Mode********/
 .dark-mode {
