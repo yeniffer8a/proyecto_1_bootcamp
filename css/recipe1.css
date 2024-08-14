@@ -28,8 +28,9 @@ body {
   margin: 1rem;
 }
 .change-theme {
-  background-color: #255538;
+  background-color: white;
   cursor: pointer;
+  border-radius: 100%;
 }
 .apartado1 {
   grid-area: aside1;
